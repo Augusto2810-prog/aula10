@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* O box-sizing: border-box GARANTE QUE O pading SEJA INCLUIDO NO CALCULO DA LARGURA, EVITANDO QUE O CONTEÚDO ULTRAPASSE A TELA */
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    /* AQUI ESTAMOS DEFININDO QUE NOSSO html OCUPE TOTALIDADE EM RELAÇÃO A ALTURA E LERGURA DA NOSSA PÁGINA */
+    width: 100vw;
+    height: 100vh;
+}
+header {
+    padding: 10vh;
+    background-color: bisque;
+    width: 100vw;
+    /* DEFINIMOS A LARGURA TOTAL DO HEADER */
+}
+
+.section-01 {
+    background-color: yellow; /* DEFINIÇÃO DE COR DE FUNDO*/
+    padding: 20vh;  /* PREENCHIMENTO */
+    display: flex;  /* TORNANDO A SECTION FLEX*/
+    justify-content: space-between; /* JUSTIFICANDO O CONTEUDO*/
+    align-items: center; /* ALINHANDO OS ITENS AO CENTRO */
+    width: 100vw; /* DEFININDO A LARGURA PARA 100% */
+}
+
+section:last-child {
+    background-color: aquamarine;
+    padding: 30vh;
+    width: 100vw;
+}
+
+.div-01 p {
+    font-size: 2em;
+    margin: 1.2em;
+}
+
+.div-02 img {
+    margin: 5rem;
+    width: 30rem;
+}
+
+.div-03 img {
+    margin: 5rem;
+    width: 30rem;
+}
+
+.div-04 p {
+    font-size: 2em;
+    margin: 1.2em;
+}
+
+footer {
+    padding: 10vh;
+    background-color: bisque;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div-6 i {
+    background-color: rgb(46, 44, 44);
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.div-5 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+@media (max-width:766px) {
+    .section-01 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+    }
+
+    .div-02 img {
+        margin: 0 auto; /* AQUI ESTOU CHAMANDO A IMAGEM E DEFININDO QUE A MESMA FIQUE COM OS VALORES SUPERIOR/INFERIOR EM 0 E AS LATERAIS SEJAM AUTO*/
+        width: 20rem; /* LARGURA DA IMAGEM*/
+    }
+
+    .div-01 p {
+        font-size: 25px;  /*AJUSTE O TAMANHO DA FONTE PARA SE ADEQUAR S TELA MENOR*/
+        line-height: 1.5; /* ESPAÇAMENTO ENTRE LINHAS PARA MELHOR LEGEBILIDADE */
+        width: 100%; /* CERTIFIQUE-SE DE OCUPAR TODA A LARGURA */
+        margin: 1em;
+
+    }
+
+    section:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+    }
+        
+
+    .div-04 p {
+        font-size: 25px;  /*AJUSTE O TAMANHO DA FONTE PARA SE ADEQUAR S TELA MENOR*/
+        line-height: 1.5; /* ESPAÇAMENTO ENTRE LINHAS PARA MELHOR LEGEBILIDADE */
+        width: 100%; /* CERTIFIQUE-SE DE OCUPAR TODA A LARGURA */
+        margin: 1em;
+    }
+
+    .div-03 img {
+        margin: 0 auto; /* AQUI ESTOU CHAMANDO A IMAGEM E DEFININDO QUE A MESMA FIQUE COM OS VALORES SUPERIOR/INFERIOR EM 0 E AS LATERAIS SEJAM AUTO*/
+        width: 20rem; /* LARGURA DA IMAGEM*/
+    }
+
+    footer {
+        padding: 10vh;
+        background-color: bisque;
+        width: 100vw;
+    }
+
+    .div-5 a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .div-6 i {
+        background-color: rgb(46, 44, 44);
+        padding: 10px;
+        font-size: 25px;
+        color: white;
+    }
+
+
+}
